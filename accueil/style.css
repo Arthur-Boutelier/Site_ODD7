@@ -43,6 +43,39 @@ body{
     transform: scale(1.5) rotate(180deg);
 }
 
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+.line{
+    width: 25%;
+    height: 4px;
+    background-color: var(--main-opposite-bg-color);
+    border-radius: 8px;
+    position: fixed;
+    top:0;
+}
+
+#home{
+    cursor: pointer;
+    background-color: var(--main-bg-color);
+    color: var(--main-opposite-bg-color);
+    display: inline-block;
+    border: 1px solid ;
+    border-radius: 4px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;   /*   ca c'est au cas ou ya d'autres elements*/
+    font-size: 24px;
+    text-decoration: none;
+}
+
+#home svg{
+    color:var(--main-opposite-bg-color);
+}
+
 #navbar {
     position: fixed;
     top: 0;
@@ -75,4 +108,19 @@ a:link, a:visited {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 8px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: small;
+}
+
+.github{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
