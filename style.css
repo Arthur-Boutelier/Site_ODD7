@@ -1,19 +1,38 @@
-body{
-    background-color: #f5f5f5f5;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --light-bg-color:#f5f5f5f5;
+    --dark-bg-color:#343434;
+
+    --main-bg-color:var(--light-bg-color);
+    --main-opposite-bg-color:var(--dark-bg-color);
 }
 
-nav{
-    display: flex;
-    justify-content: flex-end;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+
+body{
+    background-color: var(--main-bg-color);
+    color:var(--main-opposite-bg-color)
 }
 
 #darkbtn{
     cursor: pointer;
-    color: black;
+    background-color: var(--main-bg-color);
+    color: var(--main-opposite-bg-color);
     display: inline-block;
-    padding: 4px;
+    padding: 0 6px;
     border: 1px solid ;
-    border-radius: 10%;
+    border-radius: 4px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;   /*   ca c'est au cas ou ya d'autres elements*/
+    font-size: 24px;
+    text-decoration: none;
 }
 
 #darkbtn svg{
@@ -24,10 +43,36 @@ nav{
     transform: scale(1.5) rotate(180deg);
 }
 
-#navbar{
-    
+#navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: #a9aaa9;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 100%;
 }
 
-#navbar:hover{
-    font-size: large;
+#navbar:hover {
+    opacity: 1;
+}
+
+a:link, a:visited {
+    color:var(--dark-bg-color);
+}
+
+#navbar a {
+    padding: 6px;
+    color:var(--dark-bg-color);
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 8px;
 }

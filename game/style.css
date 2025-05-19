@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 32px);
+    grid-template-rows: repeat(10, 32px);
+    gap: 2px;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+.cell {
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border: 1px solid #ccc;
+    background-image: none;
+}
+
+#items {
+    display: flex;
+    gap:5px;
+}
+
+.item {
+    width: 32px;
+    height: 32px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.windmill { background-image: url("../images/windmill.gif");}
+.solarpanel { background-image: url("../images/solarpanel2.gif"); }
+.green { background-color: green; }
+
+.selected {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
