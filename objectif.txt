@@ -1,4 +1,4 @@
-on peut scroll le body, texte qui apparait de maniere stylée avec animation
+nav bar invisible en hover, pas dans le on peut scroll le body, texte qui apparait de maniere stylée avec animation
 
 le footer en bas on mets nos noms, le site ODD.fr, on mets la navbar ? github du projet(link)
 
