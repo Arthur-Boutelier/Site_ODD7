@@ -1,0 +1,10 @@
+#parents div{
+    margin-top: 100px;
+    background-color: #a9aaa9;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    text-align: center;
+}
+
