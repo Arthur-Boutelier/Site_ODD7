@@ -4,14 +4,14 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: var(--main-bg-color);
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(10, 32px);
     grid-template-rows: repeat(10, 32px);
-    gap: 2px;
+    gap: 3px;
     margin-bottom: 20px;
     user-select: none;
 }
