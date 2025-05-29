@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>OOD7</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src = "dark.js" defer></script>
+    <script src = "script.js"></script>
+    <nav>
+        <div id="navbar">
+            <a href="/Accueil">ODD7</a>
+            <a href="/quiz" id = "actuel">Quiz</a>
+            <a href="/game">Jeu</a>
+        </div>
+        <div id="darkbtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" id ="caca" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+                <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+            </svg>
+        </div>
+    </nav>
+</head>
+<body>
+    <form onsubmit = "return submit_handler()">
+        <fieldset>
+            <legend>ODD7</legend>
+            <ol type="1">
+                <li>question 1<br>
+                    <input type="radio" id = "q1_1" value="1a" name = "1">
+                    <label> reponse 1</label><br>
+                    <input type="radio" id = "q1_2" value="1b" name = "1">
+                    <label>reponse 2</label><br>
+                    <input type="radio" id = "q1_3" value="1c" name = "1">
+                    <label>reponse 3</label>
+                <br>
+                <br>
+                </li>
+                <li>Question 2<br>
+                    <input type="checkbox" id = "q2_1" value="2a" name = "2">
+                    <label>reponse 1</label><br>
+                    <input type="checkbox" id = "q2_2" value="2b" name = "2">
+                    <label>reponse 2</label><br>
+                    <input type="checkbox" id = "q2_3" value="2c" name = "2">
+                    <label>reponse 3</label>
+                <br>
+                <br>
+                </li>
+                <li> Question 3<br>
+                <input type="text">
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>Remplit les champs</legend>
+            <div id = "parents">
+                <div id = "texte" class="rowflex">
+                    Ceci est un texte <div class = "dropzone" id = "dropzone1" ondragover = "dragover_handler(event)"  ondrop ="ondrop_handler(event)"></div> jdfuhfuihuiefhuifhu hfdehuifheufhufhqh fhfhuifhuifeb uihfuiehfuehnf hffd,fkjfiji hfeijfeziojfioezj ijfiejfio jfiozejfioezj ikofjikenfiez jijf iezkojfikoezjf ikoijfiko ik fijeikokfjezikojfi jfik iikofezizofjezuiof uihuiouehfuiehujiefuihefh
+                </div>
+                <div class="rowflex">
+                    <div id = "rep1" draggable="true" ondragstart="dragstart_handler(event)" class = rep_non_place>rep1</div>
+                    <div id = "rep2" draggable="true" ondragstart="dragstart_handler(event)" class = rep_non_place>rep2</div>
+                    <div id = "rep3" draggable="true" ondragstart="dragstart_handler(event)" class = rep_non_place>rep3</div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class = "rowflex">
+            <p draggable="true">Blablabla
+            <select id = "select_1">
+                <option value = "" disabled selected>Choisissez une option</option>
+                <option value = "1">option 1 </option>
+                <option value = "2">option 2 </option>
+                <option value = "3">option 3 </option>
+            </select>
+            fjfhuqfhiqfhguqhfnqeufhuiqgfjkqegcfu igfuifquifhqeyuvdsvsdvjjjiojio iojio jifioejefjiozi ifgqshuiefghqseuifgsefgbuifhj qfhusfhufhusgfshugfhygfysdgfuysdgfydgfdsfyusfduygfyudgfsdyugfsyugfhyusfgyusgfsyugfuysyrgfyhuisfyhugf</p>
+        </fieldset>
+        <button>Envoyer</button>
+    </form>
+    
+</body>
+</html>
