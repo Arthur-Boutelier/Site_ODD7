@@ -1,0 +1,13 @@
+:root{
+    --light-bg-color:#f5f5f5f5;
+    --dark-bg-color:#343434;
+
+    --main-bg-color:var(--light-bg-color);
+    --main-opposite-bg-color:var(--dark-bg-color);
+}
+
+
+
+ul{
+    margin-left: 24px ;
+}
