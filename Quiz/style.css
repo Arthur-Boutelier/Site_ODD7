@@ -18,10 +18,8 @@ body{
 }
 
 .rowflex{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .rep_non_place{

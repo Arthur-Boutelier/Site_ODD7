@@ -1,0 +1,44 @@
+#contribution{
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 50px;
+}
+
+section{
+    margin-bottom: 75px;
+}
+
+table{
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+thead{
+    margin: 0px;
+
+}
+
+tbody th{
+    font-weight: normal;
+}
+
+th{
+    padding: 5px;
+    border : 1px solid var(--main-opposite-bg-color);
+}
+
+.differents{
+    background-color: var(--secondary-bg-color);
+}
+
+img{
+    margin-right: 5px;
+    width: 200px;
+}
+
+#pres_equipe h3{
+    margin: 20px 0;
+}
