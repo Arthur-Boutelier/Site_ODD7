@@ -4,13 +4,23 @@ function dragover_handler(event){
 }
 
 function ondrop_handler(event){
-    event.preventDefault();
     const id = event.dataTransfer.getData("text/plain");
     const dragged = document.getElementById(id);
+    if (event.target.id == "ini_dropzone"){
+        dragged.classList.add("rep_non_place");
+        dragged.classList.remove("rep_place");
+    }
+    else{
+        dragged.classList.remove("rep_non_place");
+        dragged.classList.add("rep_place");
+        event.target.style.width = "max-content";
+        console.log("caca");
+    }
+    const id_parent = dragged.parentElement.id;
+    if (id_parent != "ini_dropzone"){
+        document.getElementById(id_parent).style.width = "6em";
+    }
     event.target.appendChild(dragged);
-    dragged.classList.remove("rep_non_place");
-    dragged.classList.add("rep_place");
-    event.target.style.width = "max-content"
     event.target.classList.remove("dropzone_hover");
 }
 
@@ -54,4 +64,9 @@ function check_select(){
     if (choice == 3)
         point += 2;
     return point;       
+}
+
+function onleave_handler(event){
+    event.preventDefault();
+    event.target.classList.remove("dropzone_hover");
 }
