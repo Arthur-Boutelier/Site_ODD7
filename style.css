@@ -71,12 +71,12 @@ body{
 }
 
 a:link, a:visited {
-    color:var(--dark-bg-color);
+    color:var(--main-opposite-bg-color);
 }
 
 #navbar a {
     padding: 6px;
-    color:var(--dark-bg-color);
+    color:var(--main-opposite-bg-color);
     text-decoration: none;
 }
 
@@ -123,7 +123,6 @@ ol{
     position: fixed;
     top:0;
 }
-
 
 footer{
     display: flex;

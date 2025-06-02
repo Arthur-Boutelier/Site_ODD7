@@ -6,7 +6,25 @@
     --main-opposite-bg-color:var(--dark-bg-color);
 }
 
+table{
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+}
 
+thead{
+    margin: 0px;
+
+}
+
+tbody th{
+    font-weight: normal;
+}
+
+th, td{
+    padding: 5px;
+    border : 1px solid var(--main-opposite-bg-color);
+}
 
 ul{
     margin-left: 24px ;
