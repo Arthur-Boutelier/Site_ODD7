@@ -6,13 +6,6 @@
     --main-opposite-bg-color:var(--dark-bg-color);
 }
 
-#img_accueil{
-    width: auto;
-    height: 200px;
-    border : 1px solid var(--main-opposite-bg-color);
-    border-radius: 4px;
-}
-
 #bandeau_accueil{
     align-items: stretch;
     flex-wrap: wrap;
@@ -33,7 +26,7 @@
 #box_texte{
     flex : 10000;
     padding : 5px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     min-width: 400px;
 }
 
@@ -67,10 +60,6 @@ body{
     width: 450px;
     border : 1px solid var(--main-opposite-bg-color);
     border-radius: 8px;
-}
-
-#bandeau_chiffre_cle img{
-
 }
 
 #titre_cle{
