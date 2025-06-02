@@ -32,7 +32,7 @@ tbody th{
     font-weight: normal;
 }
 
-th, td{
+th{
     padding: 5px;
     border : 1px solid var(--main-opposite-bg-color);
 }
