@@ -36,53 +36,97 @@
         <fieldset>
             <legend>ODD7</legend>
             <ol type="1">
-                <li>question 1<br>
+                <li>Quel est le pourcentage de la consommation d'électricité française provenant des énergies renouvelables ?<br>
                     <input type="radio" id = "q1_1" value="1a" name = "1">
-                    <label> reponse 1</label><br>
+                    <label>20%</label><br>
                     <input type="radio" id = "q1_2" value="1b" name = "1">
-                    <label>reponse 2</label><br>
+                    <label>84%</label><br>
                     <input type="radio" id = "q1_3" value="1c" name = "1">
-                    <label>reponse 3</label>
+                    <label>20.7%</label>
                 <br>
                 <br>
                 </li>
-                <li>Question 2<br>
-                    <input type="checkbox" id = "q2_1" value="2a" name = "2">
-                    <label>reponse 1</label><br>
-                    <input type="checkbox" id = "q2_2" value="2b" name = "2">
-                    <label>reponse 2</label><br>
-                    <input type="checkbox" id = "q2_3" value="2c" name = "2">
-                    <label>reponse 3</label>
-                <br>
-                <br>
-                </li>
-                <li> Question 3<br>
-                <input type="text">
-                </li>
+                    <li>Q'est-ce qu'un ODD ?<br>
+                        <input type="checkbox" id = "q2_1" value="2a" name = "2">
+                        <label>17 objectifs à atteindre d'ici 2030</label><br>
+                        <input type="checkbox" id = "q2_2" value="2b" name = "2">
+                        <label>Des mesures concernant uniquement l'écologie</label><br>
+                        <input type="checkbox" id = "q2_3" value="2c" name = "2">
+                        <label>Un ensemble d'objectifs étroitement liés entre eux permettant de créer un équilibre entre besoin et consommation</label>
+                    <br>
             </ol>
         </fieldset>
         <fieldset>
             <legend>Remplit les champs</legend>
             <div id = "parents">
                 <div id = "texte" class="rowflex">
-                    Ceci est un texte <div class = "dropzone" id = "dropzone1" ondragover = "dragover_handler(event)"  ondrop ="ondrop_handler(event)"></div> jdfuhfuihuiefhuifhu hfdehuifheufhufhqh fhfhuifhuifeb uihfuiehfuehnf hffd,fkjfiji hfeijfeziojfioezj ijfiejfio jfiozejfioezj ikofjikenfiez jijf iezkojfikoezjf ikoijfiko ik fijeikokfjezikojfi jfik iikofezizofjezuiof uihuiouehfuiehujiefuihefh
+                    L’ODD 7 vise à garantir
+                    <div class = "dropzone" id = "dropzone1" ondragleave="onleave_handler(event)" ondragover = "dragover_handler(event)"  ondrop ="ondrop_handler(event)"></div>
+                    à une énergie fiable, durable et moderne pour tous.
+                    Il encourage à 
+                    <div class = "dropzone" id = "dropzone2" ondragleave="onleave_handler(event)" ondragover = "dragover_handler(event)"  ondrop ="ondrop_handler(event)"></div>
+                    la part des énergies renouvelables dans le
+                    <div class = "dropzone" id = "dropzone3" ondragleave="onleave_handler(event)" ondragover = "dragover_handler(event)"  ondrop ="ondrop_handler(event)"></div>
+                    mondial.
+                    Il ne s’agit pas uniquement de produire plus, mais aussi de
+                    <div class = "dropzone" id = "dropzone4" ondragleave="onleave_handler(event)" ondragover = "dragover_handler(event)"  ondrop ="ondrop_handler(event)"></div>
+                    la consommation grâce à une meilleure efficacité énergétique.
+                    Pour y parvenir, l’ODD 7 soutient la 
+                    <div class = "dropzone" id = "dropzone5" ondragleave="onleave_handler(event)" ondragover = "dragover_handler(event)"  ondrop ="ondrop_handler(event)"></div>
+                    internationale, en particulier pour les pays en développement.
                 </div>
-                <div class="rowflex">
-                    <div id = "rep1" draggable="true" ondragstart="dragstart_handler(event)" class = rep_non_place>rep1</div>
-                    <div id = "rep2" draggable="true" ondragstart="dragstart_handler(event)" class = rep_non_place>rep2</div>
-                    <div id = "rep3" draggable="true" ondragstart="dragstart_handler(event)" class = rep_non_place>rep3</div>
+                <div class="rowflex" id = "ini_dropzone" ondragleave="onleave_handler(event)" ondragover = "dragover_handler(event)"  ondrop ="ondrop_handler(event)">
+                    <div id = "rep1" draggable="true" ondragstart="dragstart_handler(event)" class = rep_non_place>mix énergétique</div>
+                    <div id = "rep2" draggable="true" ondragstart="dragstart_handler(event)" class = rep_non_place>réduire</div>
+                    <div id = "rep3" draggable="true" ondragstart="dragstart_handler(event)" class = rep_non_place>augmenter</div>
+                    <div id = "rep4" draggable="true" ondragstart="dragstart_handler(event)" class = rep_non_place>coopération</div>
+                    <div id = "rep5" draggable="true" ondragstart="dragstart_handler(event)" class = rep_non_place>l’accès universel</div>
                 </div>
             </div>
         </fieldset>
         <fieldset class = "rowflex">
-            <p draggable="true">Blablabla
-            <select id = "select_1">
-                <option value = "" disabled selected>Choisissez une option</option>
-                <option value = "1">option 1 </option>
-                <option value = "2">option 2 </option>
-                <option value = "3">option 3 </option>
-            </select>
-            fjfhuqfhiqfhguqhfnqeufhuiqgfjkqegcfu igfuifquifhqeyuvdsvsdvjjjiojio iojio jifioejefjiozi ifgqshuiefghqseuifgsefgbuifhj qfhusfhufhusgfshugfhygfysdgfuysdgfydgfdsfyusfduygfyudgfsdyugfsyugfhyusfgyusgfsyugfuysyrgfyhuisfyhugf</p>
+            <p> 
+                De nombreuses écoles en zone rurale ne peuvent pas fonctionner correctement faute d’
+                <select id = "select_1">
+                    <option value = "" disabled selected>Choisissez une option</option>
+                    <option value = "1">électricité</option>
+                    <option value = "2">internet</option>
+                    <option value = "3">eau </option>
+                </select>
+                pour alimenter l’éclairage et les équipements.
+                Pour accélérer la sortie des énergies fossiles, l’ODD 7 promeut une 
+                <select id = "select_2">
+                    <option value = "" disabled selected>Choisissez une option</option>
+                    <option value = "1">construction</option>
+                    <option value = "2">transition</option>
+                    <option value = "3">privatisation</option>
+                </select>
+                énergétique planifiée à l’échelle mondiale.
+                L’un des freins majeurs reste le manque de volonté des États à 
+                <select id = "select_3">
+                    <option value = "" disabled selected>Choisissez une option</option>
+                    <option value = "1">financer</option>
+                    <option value = "2">rejeter</option>
+                    <option value = "3">comprendre</option>
+                </select>
+                des projets d’énergie propre.
+                L’ODD 7 insiste aussi sur la nécessité de garantir l’
+                <select id = "select_4">
+                    <option value = "" disabled selected>Choisissez une option</option>
+                    <option value = "1">sécurité</option>
+                    <option value = "2">stabilité</option>
+                    <option value = "3">accessibilité</option>
+                </select>
+                à une énergie moderne pour tous, y compris dans les zones isolées.
+                Enfin, les choix technologiques doivent être faits dans le respect des
+                <select id = "select_5">
+                    <option value = "" disabled selected>Choisissez une option</option>
+                    <option value = "1">profits</option>
+                    <option value = "2">limites</option>
+                    <option value = "3">délais</option>
+                </select>
+                écologiques de la planète.  
+            </p>
         </fieldset>
         <button>Envoyer</button>
     </form>
@@ -92,7 +136,7 @@
         <a href="/A_Propos/">A propos</a>
         <div class="github">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 30 30">
-                <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
+                <path    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
             </svg>
             <a href="https://github.com/Arthur-Boutelier/Site_ODD7">GITHUB</a>
         </div>
