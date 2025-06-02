@@ -70,3 +70,11 @@ function onleave_handler(event){
     event.preventDefault();
     event.target.classList.remove("dropzone_hover");
 }
+
+function displayScore(score){
+    const result = document.getElementById("result");
+
+    const p = document.createElement("p");
+    p.textContent = "Votre score est de " + score;
+    result.appendChild(p);
+}
